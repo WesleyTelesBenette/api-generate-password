@@ -11,7 +11,7 @@ E obviamente, é necessário configurar as variáveis de ambiente dessas duas te
 # ✈️ Chamar a API:
 **ROTA**: /password
 
-**MODELO**:
+**CORPO DA REQUISIÇÃO**:
 ```json
 {
   "securityLevel": 2,

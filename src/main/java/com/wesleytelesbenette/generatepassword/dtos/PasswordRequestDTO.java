@@ -8,11 +8,11 @@ import org.hibernate.validator.constraints.Range;
 public class PasswordRequestDTO
 {
     @Range(min = 0, max = 3, message = "O nível de segurança, deve ser entre 0 e 3.")
-    int securityLevel;
+    int securityLevel = 0;
 
     @Range(min = 8, message = "A quantidade de caracteres deve ser no mínimo 8.")
-    int amountCharacters = 0;
+    int amountCharacters = 8;
 
     @Size(max = 8, message = "A palavra-chave pode ter no máximo 8 caracteres.")
-    String keyword;
+    String keyword = "";
 }
