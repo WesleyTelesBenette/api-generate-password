@@ -2,7 +2,7 @@ package com.wesleytelesbenette.generatepassword.controllers;
 
 import com.wesleytelesbenette.generatepassword.dtos.PasswordRequestDTO;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -26,7 +26,7 @@ public class PasswordController
         this.passwordCharacters.put(3, "!@#$%&*().,>:{}_-+=/\\|");
     }
 
-    @GetMapping
+    @PostMapping
     public String getGeneratePassword(@Valid @RequestBody PasswordRequestDTO request)
     {
         return generatePassword
