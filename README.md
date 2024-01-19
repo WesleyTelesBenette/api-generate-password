@@ -9,7 +9,7 @@ Caso se interesse em **rodar o projeto na sua máquina**, é necessário ter ins
 
 E obviamente, é necessário configurar as variáveis de ambiente dessas duas tecnologias.
 
-## ✈️ Como Chamar essa API:
+## ✈️ Como Chamar essa API?
 **ENDEREÇO**: https://api-generate-password.onrender.com/
 
 **ROTA**: /password
@@ -33,3 +33,10 @@ Sendo:
   - 3 -> Números, letras minúsculas, maiúsculas e caracteres especiais.
 - **amountCharacters**: de no mínimo 8.
 - **keyword**: uma palavra que você quer que a senha contenha.
+
+## 🪄 Exemplo de Utilização
+Escrevi um exemplo simples de uma aplicação console em Java (v.21.0.2), que imagina que seja o suficiente para entender como interagir com a API.
+
+Caso tenha interesse, faça o download e compile o arquivo:
+
+**ARQUIVO**: [TestApiPassword.java](TestApiPassword.java).

@@ -2,16 +2,16 @@ package com.wesleytelesbenette.generatepassword.controllers;
 
 import com.wesleytelesbenette.generatepassword.dtos.PasswordRequestDTO;
 import jakarta.validation.Valid;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
 
 @RestController
+@CrossOrigin(origins = "http://127.0.0.1:5500/")
 @RequestMapping("/password")
 public class PasswordController
 {
@@ -27,14 +27,17 @@ public class PasswordController
     }
 
     @PostMapping
-    public String getGeneratePassword(@Valid @RequestBody PasswordRequestDTO request)
+    public ResponseEntity<String> getGeneratePassword(@RequestBody @Valid PasswordRequestDTO request)
     {
-        return generatePassword
+        final String password = generatePassword
         (
             request.getSecurityLevel(),
             request.getAmountCharacters(),
             request.getKeyword()
         );
+
+        String jsonResponse = "{ \"password\": \"" + password + "\" }";
+        return new ResponseEntity<>(jsonResponse, HttpStatus.OK);
     }
 
     private String generatePassword(int securityLevel, int amountCharacters, String keyword)
