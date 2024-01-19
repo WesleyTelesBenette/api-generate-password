@@ -39,4 +39,4 @@ Escrevi um exemplo simples de uma aplicação console em Java (v.21.0.2), que im
 
 Caso tenha interesse, faça o download e compile o arquivo:
 
-**ARQUIVO**: [TestApiPassword.java](TestApiPassword.java).
+**ARQUIVO**: [TestApiPassword.java](script-test/TestApiPassword.java).
