@@ -9,16 +9,13 @@ Caso se interesse em **rodar o projeto na sua máquina**, é necessário ter ins
 
 E obviamente, é necessário configurar as variáveis de ambiente dessas duas tecnologias.
 
-## 🪄 Demonstração
-Para entender melhor como a API pode ser utilizada na prática, talvez você queira uma pequena demonstração utilizando um frontend simples:
-- Link (em breve...)
-
 ## ✈️ Como Chamar essa API:
 **ENDEREÇO**: https://api-generate-password.onrender.com/
 
 **ROTA**: /password
 
 **CORPO DA REQUISIÇÃO**:
+
 ```json
 {
   "securityLevel": 2,
@@ -26,6 +23,8 @@ Para entender melhor como a API pode ser utilizada na prática, talvez você que
   "keyword": "bola"
 }
 ```
+(todos os pares chave-valor são opcionais)
+
 Sendo:
 - **securityLevel**: de 0 a 3.
   - 0 -> Só números.
