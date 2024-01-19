@@ -19,7 +19,8 @@ public class TestApiPassword
     {
         showInputs();
         generatePassword();
-        if (responseCode == 200) showResponse();
+        if (responseCode == 200)
+            showResponse();
     }
 
     public static void showInputs()
@@ -38,7 +39,7 @@ public class TestApiPassword
             System.out.print(" * amountCharacters (>7): ");
             amount = read.nextInt();
 
-            System.out.println("-----------------------------\n");
+            System.out.println("\n-----------------------------\n");
         }
     }
 
@@ -47,7 +48,7 @@ public class TestApiPassword
         try
         {
             //Configurações básicas
-            URL url = new URL("http://localhost:8080/password");
+            URL url = new URL("https://api-generate-password.onrender.com/password");
             HttpURLConnection Connection = (HttpURLConnection) url.openConnection();
             Connection.setRequestMethod("POST");
             Connection.setRequestProperty("Content-Type", "application/json");
