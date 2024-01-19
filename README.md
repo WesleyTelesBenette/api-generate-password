@@ -3,16 +3,14 @@
 Uma API para gerar senhas gerais, que podem ter seu **nível de segurança**, **tamanho** e **palavras-chave** personalizadas.
 
 ## 🤔 Posso Baixar o Projeto?
-Caso se interesse em **rodar o projeto na sua máquina**, é necessário ter instalado:
+Caso se interesse em baixar os arquivos e **rodar o projeto na sua máquina**, é necessário ter instalado:
 - [Java SDK](https://www.oracle.com/br/java/technologies/downloads/) (v.21.0.2).
 - [Apache Maven](https://maven.apache.org/download.cgi) (v.3.9.6).
 
 E obviamente, é necessário configurar as variáveis de ambiente dessas duas tecnologias.
 
 ## ✈️ Como Chamar essa API?
-**ENDEREÇO**: https://api-generate-password.onrender.com/
-
-**ROTA**: /password
+**ENDEREÇO + ROTA**: https://api-generate-password.onrender.com/password
 
 **CORPO DA REQUISIÇÃO**:
 
