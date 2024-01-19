@@ -30,10 +30,10 @@ Sendo:
   - 2 -> Números, letras minúsculas e maiúsculas.
   - 3 -> Números, letras minúsculas, maiúsculas e caracteres especiais.
 - **amountCharacters**: quantidade de caracteres da senha (no mínimo 8).
-- **keyword**: uma palavra que você quer que a senha contenha (no máximo 8).
+- **keyword**: uma palavra que você quer que a senha contenha (no máximo 8 caracteres).
 
 ## 🪄 Exemplo de Utilização
-Escrevi um exemplo simples de uma aplicação console em Java (v.21.0.2), que imagina que seja o suficiente para entender como interagir com a API.
+Escrevi um exemplo simples de uma aplicação console em Java (v.21.0.2), que imagino que seja o suficiente para entender como interagir com a API.
 
 Caso tenha interesse, faça o download e compile o arquivo:
 
