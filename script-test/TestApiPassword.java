@@ -33,10 +33,10 @@ public class TestApiPassword
             System.out.print(" * Palavra-chave (<9): ");
             key = read.nextLine();
 
-            System.out.print(" * securityLevel (0-3): ");
+            System.out.print(" * Nível de Segurança (0-3): ");
             security = read.nextInt();
 
-            System.out.print(" * amountCharacters (>7): ");
+            System.out.print(" * Quantidade de Caracteres (>7): ");
             amount = read.nextInt();
 
             System.out.println("\n-----------------------------\n");
